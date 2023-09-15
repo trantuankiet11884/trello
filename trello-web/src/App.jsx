@@ -1,12 +1,9 @@
-import Button from "@mui/material/Button";
-import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
+import Board from "./pages/Boards/_id.jsx";
 
 function App() {
   return (
     <>
-      asd
-      <Button variant="outlined">Hello world</Button>
-      <AccessAlarmIcon color="success" />
+      <Board />
     </>
   );
 }
