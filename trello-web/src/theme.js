@@ -5,11 +5,12 @@ const theme = extendTheme({
     appBarHeight: "58px",
     boardBarHeight: "60px",
   },
+
   colorSchemes: {
     light: {
       palette: {
         primary: {
-          main: "#b2d8d8",
+          main: "#3dbaae",
           secondary: "#DC4D01",
         },
       },
@@ -19,6 +20,45 @@ const theme = extendTheme({
         primary: {
           main: "#00FFFF",
           secondary: "#FFA500",
+        },
+      },
+    },
+  },
+
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "capitalize",
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: theme.palette.primary.main,
+          fontSize: "0.875rem",
+        }),
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: ({ theme }) => {
+          return {
+            color: theme.palette.primary.main,
+            fontSize: "0.875rem",
+            ".MuiOutLinedInput-notchedOutline": {
+              borderColor: theme.palette.primary.light,
+            },
+            "&:hover": {
+              ".MuiOutLinedInput-notchedOutline": {
+                borderColor: theme.palette.primary.main,
+              },
+            },
+            "& fieldset": {
+              borderWidth: "1px !important",
+            },
+          };
         },
       },
     },
