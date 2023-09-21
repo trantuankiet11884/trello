@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import ModeSelect from "~/components/ModeSelect/index.jsx";
+import ModeSelect from "~/components/ModeSelect/ModeSelect.jsx";
 import AppsIcons from "@mui/icons-material/Apps";
 import SvgIcon from "@mui/material/SvgIcon";
 import { ReactComponent as TrelloIcon } from "~/assets/trello.svg";
