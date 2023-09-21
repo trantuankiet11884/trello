@@ -18,13 +18,30 @@ const ModeSelect = () => {
   };
   return (
     <FormControl size="small" sx={{ minWidth: "120px" }}>
-      <InputLabel id="label-select-dark-light-mode">Mode</InputLabel>
+      <InputLabel
+        id="label-select-dark-light-mode"
+        sx={{
+          color: "#fff",
+          "&.Mui-focused": { color: "#fff" },
+        }}
+      >
+        Mode
+      </InputLabel>
       <Select
         labelId="label-select-dark-light-mode"
         id="select-dark-light-mode"
         value={mode}
         label="Mode"
         onChange={handleChange}
+        sx={{
+          color: "#fff",
+          ".MuiOutLinedInput-notchedOutline": { borderColor: "#fff" },
+          "&:hover .MuiOutLinedInput-notchedOutline": { borderColor: "#fff" },
+          "&.Mui-focused .MuiOutLinedInput-notchedOutline": {
+            borderColor: "#fff",
+          },
+          "&.MuiSvgIcon-root  ": { color: "#fff" },
+        }}
       >
         <MenuItem value="light">
           <Box
