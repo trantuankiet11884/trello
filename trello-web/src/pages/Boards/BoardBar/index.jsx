@@ -110,8 +110,11 @@ const BoardBar = () => {
             "& .MuiAvatar-root": {
               width: 34,
               height: 34,
-              fontSize: 24,
-              border: "none",
+              fontSize: 16,
+              border: "none ",
+              color: "#fff",
+              cursor: "pointer",
+              "&:first-of-type": { bgcolor: "#a4b0be" },
             },
           }}
         >
