@@ -12,6 +12,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Button from "@mui/material/Button";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 const MENU_STYLES = {
+  textTransform: "capitalize",
   color: "#fff",
   bgcolor: "transparent",
   border: "none",
@@ -25,7 +26,7 @@ const MENU_STYLES = {
   },
 };
 
-const BoardBar = () => {
+const BoardBar = ({ board }) => {
   return (
     <Box
       sx={{
@@ -51,14 +52,14 @@ const BoardBar = () => {
         <Chip
           sx={MENU_STYLES}
           icon={<DashboardIcon />}
-          label="Tuan Kiet"
+          label={board?.title}
           clickable
         />
 
         <Chip
           sx={MENU_STYLES}
           icon={<VpnLockIcon />}
-          label="Private/Public Workspaces"
+          label={board?.type}
           clickable
         />
 
